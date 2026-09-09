@@ -1,0 +1,59 @@
+:root{
+  --bg:#f6f7fb;--panel:#fff;--text:#151821;--muted:#707688;--line:#e7e9f0;
+  --accent:#5b55e6;--accent2:#8b5cf6;--dark:#202331;--good:#138a72;
+  --shadow:0 12px 35px rgba(25,28,45,.08);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+.appShell{max-width:720px;margin:0 auto;min-height:100vh;background:var(--bg);position:relative;padding-bottom:90px}
+.screen{padding:26px 20px 30px}
+.onboard{max-width:700px;margin:0 auto;min-height:100vh;padding:60px 24px;background:radial-gradient(circle at 80% 10%,#e8e5ff 0,transparent 32%),var(--bg)}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.02;letter-spacing:-1.7px;margin:10px 0 14px}
+h2,h3,p{margin-top:0}
+h2{font-size:25px}.lead{font-size:19px;line-height:1.55;color:var(--muted);max-width:620px}
+em{font-style:normal;color:var(--accent)}
+.brandBadge,.streak,.pill,.eyebrow{display:inline-flex;align-items:center;gap:7px}
+.brandBadge{background:var(--dark);color:#fff;border-radius:999px;padding:9px 13px;font-weight:800}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:1.25px;color:var(--accent)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow);margin:16px 0}
+label{display:block;font-weight:800;margin-bottom:9px}
+input,textarea{width:100%;border:1px solid var(--line);border-radius:14px;background:#fbfbfd;padding:14px;color:var(--text);outline:none}
+input:focus,textarea:focus{border-color:var(--accent)}
+.primary,.secondary,.back{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:14px;padding:13px 17px;font-weight:850}
+.primary{background:var(--dark);color:#fff}.primary:hover{transform:translateY(-1px)}
+.secondary{background:#edeefa;color:var(--dark)}
+.big{width:100%;font-size:17px;padding:17px;margin-top:18px}.wide{width:100%;margin-top:14px}
+.primary:disabled{opacity:.55;cursor:default}
+.choiceGrid{display:grid;grid-template-columns:1fr;gap:10px;margin:22px 0}
+.choice{text-align:left;padding:17px;border-radius:16px;border:1px solid var(--line);background:#fff;font-weight:750}
+.choice.selected{border-color:var(--accent);box-shadow:0 0 0 2px rgba(91,85,230,.12);color:var(--accent)}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.topbar h2{margin:2px 0}
+.streak{background:#fff0db;color:#a65a00;padding:9px 11px;border-radius:999px;font-size:13px;font-weight:800}
+.hero.gradient{background:linear-gradient(145deg,#242637,#463f9d);color:white;border:0}.hero .eyebrow{color:#bdb9ff}.hero p{color:#d9dbeb}
+.progressTrack{height:8px;background:rgba(255,255,255,.18);border-radius:999px;overflow:hidden;margin:20px 0 8px}.progressTrack div{height:100%;background:#fff;border-radius:999px}
+.row{display:flex;align-items:center;gap:10px}.spread{justify-content:space-between}.center{justify-content:center}.grow{flex:1}
+.muted{color:var(--muted)}.tiny{font-size:13px}.tiny svg{vertical-align:-2px;margin-right:5px}
+.statsRow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 26px}
+.miniCard{background:#fff;border:1px solid var(--line);border-radius:17px;padding:14px;display:grid;gap:3px}.miniCard strong{font-size:20px}.miniCard span{font-size:11px;color:var(--muted)}
+.sectionHead{display:flex;justify-content:space-between;align-items:center;margin:24px 2px 10px}.sectionHead h3{margin:0}.sectionHead span{font-size:13px;color:var(--muted)}
+.lessonCard,.lessonListItem,.exerciseCard,.practiceHero{width:100%;border:1px solid var(--line);background:#fff;border-radius:20px;padding:17px;text-align:left;display:flex;align-items:center;gap:15px;box-shadow:var(--shadow)}
+.lessonCard p,.lessonListItem p,.exerciseCard p,.practiceHero p{margin:3px 0;color:var(--muted);line-height:1.42}
+.lessonDay{font-size:11px;font-weight:900;letter-spacing:1px;color:var(--accent)}
+.practiceHero{background:linear-gradient(135deg,#f0eeff,#fff)}.micCircle{width:54px;height:54px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;flex:none}
+.latestScore{display:flex;align-items:center;gap:20px}
+.scoreRingWrap{text-align:center}.scoreRing{width:96px;height:96px;border-radius:50%;padding:8px}.scoreRingInner{width:100%;height:100%;border-radius:50%;background:white;display:grid;place-content:center}.scoreRingInner strong{font-size:28px}.scoreRingInner span{font-size:11px;color:var(--muted)}
+.stack{display:grid;gap:12px}.lessonListItem,.exerciseCard{box-shadow:none}.dayBubble,.iconSquare{width:46px;height:46px;border-radius:14px;background:#efeffa;display:grid;place-items:center;font-weight:900;flex:none}.dayBubble.done{color:var(--good);background:#e5f7f1}.pill{background:#f1f1f7;padding:5px 8px;border-radius:999px;font-size:10px;font-weight:900;color:var(--muted)}
+.back{background:transparent;padding:5px 0;margin-bottom:24px;color:var(--muted)}
+.lessonHero{padding:20px 0}.concept{display:flex;gap:16px}.concept>svg{color:var(--accent);flex:none}
+.promptCard{background:var(--dark);color:white;border-radius:24px;padding:22px;margin:18px 0}.promptCard span{font-size:12px;color:#b8bbcb}.promptCard h2{font-size:24px;margin:8px 0 14px;line-height:1.2}.promptCard p{color:#d3d5e1;margin:0}
+.recorder{text-align:center;border:1px solid var(--line);border-radius:24px;padding:28px 16px;background:#fff;margin:16px 0}.timer{font-size:48px;font-weight:850;letter-spacing:-2px}.recordButton{width:82px;height:82px;border-radius:50%;border:8px solid #eeeefd;background:var(--accent);color:white;display:grid;place-items:center;margin:24px auto 0}.recordButton.stop{background:#d74a4a}.isRecording{box-shadow:0 0 0 3px rgba(215,74,74,.08)}
+.working{padding:14px;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--muted)}.spin{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.analysis{margin-top:22px}.scoreBanner{background:linear-gradient(135deg,#5b55e6,#8b5cf6);color:white;border-radius:24px;padding:22px;display:flex;align-items:baseline;gap:8px}.scoreBanner span{margin-right:auto;font-weight:800}.scoreBanner strong{font-size:54px}.scoreBanner small{opacity:.75}
+.scoreBars{display:grid;gap:12px;margin-top:16px}.scoreRow{display:grid;grid-template-columns:115px 1fr 34px;gap:10px;align-items:center;font-size:13px}.bar{height:9px;background:var(--line);border-radius:999px;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.priorityCard{border-color:#d9d6ff;background:#f8f7ff}.card li{margin:8px 0;line-height:1.45}.coachNote{color:var(--muted);font-size:14px;line-height:1.5;padding:0 6px}
+.trend{height:180px;display:flex;align-items:end;gap:7px;border-bottom:1px solid var(--line);padding-top:18px;overflow-x:auto}.trendCol{height:100%;min-width:24px;display:flex;flex-direction:column;justify-content:end;align-items:center;gap:6px}.trendBar{width:16px;background:var(--accent);border-radius:8px 8px 2px 2px}.trendCol span{font-size:10px;color:var(--muted)}
+.historyItem{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px;display:flex;justify-content:space-between;align-items:center}.historyItem p{margin:4px 0 0;color:var(--muted);font-size:12px}.historyScore{width:48px;height:48px;border-radius:50%;background:#efeffa;display:grid;place-items:center;font-weight:900;color:var(--accent)}
+.bottomNav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(720px,100%);height:76px;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);z-index:50}.bottomNav button{border:0;background:transparent;color:var(--muted);display:grid;place-content:center;gap:4px;font-size:10px}.bottomNav svg{margin:auto}.bottomNav .navActive{color:var(--accent);font-weight:900}
+@media(min-width:650px){.choiceGrid{grid-template-columns:1fr 1fr}.screen{padding-left:28px;padding-right:28px}}
